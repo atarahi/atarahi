@@ -4,8 +4,9 @@
 <html lang="en">
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+	
 	<title>meet atarah</title>
 <!-- <base href="https://www.meetatarah.htm" target="_blank">
 <link rel="icon" type="image/x-icon" href="https://www.favicon.cc/favicon..ico"> -->
@@ -18,15 +19,44 @@
 
 
 <style>
+	
+* {
+  box-sizing: border-box;
+}
+
 
 body {
-background-color:#FFFFFF;
+
+@media only screen and (max-width: 600px) {
+  .scrolling-text {grid-area: 1 / span 6;}
+  .header {grid-area: 2 / span 6;}
+  .journalism samples header {grid-area: 3 / span 6;}
+  .journalism samples {grid-area: 4 / span 6;}
+  .creative writing samples header {grid-area: 5 / span 6;}
+  .creative writing samples {grid-area: 6 / span 6;}
+  .multimedia samples header {grid-area: 7 / span 6;}
+  .multimedia samples {grid-area: 8 / span 6;}
+  .footer {grid-area: 9 / span 1;}
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'scrolling-text'
+    'header'
+    'journalism samples header'
+    'journalism samples'
+	'creative writing samples header'
+    'creative writing samples'
+	'multimedia samples header'
+	'multimedia samples'
+    'footer';
+  background-color: #FFFFFF;
+
+	
 font-family: courier;
 border: 2 px solid #FFFFFF;
 padding: 250px;
 }
-
-
 
 	
 </style>
@@ -38,7 +68,8 @@ padding: 250px;
 
 <body>
 
-
+<div class="grid-container">
+	
 <div class= "scrolling-text
 ">
 
@@ -79,27 +110,25 @@ Welcome to my portfolio! Scroll, click, and otherwise explore to learn more abou
   </script>
 
 
-
-
-
-
-
-
-
+<div class="header">
 <h1> 
 <h1 style="font-size: 70px; text-align:center; color:#9A9C5C;">
 atarah israel 
 </h1>
+</div>
 
-
+	
+<div class="journalism samples header">
 <p>
 <p style="text-align:center;color:#6D5B69;">
 
 <b>JOURNALISM: CLIPS AND WRITING SAMPLES</b>
 
 </p>
+</div>
 
 
+<div class="journalism samples">
 
 <p> 
 <small>
@@ -133,17 +162,19 @@ atarah israel
 
 </small>
 </p>
+</div>
 
 
-
+<div class="creative writing samples header">
 
 <p>
 <p style="text-align:center;color:#6D5B69;">
 <b> CREATIVE WRITING </b>
 </p>
+</div>
 
 
-
+<div class="creative writing samples">
 
 <p>
 <p style="text-align:center;color:#6D5B69;">
@@ -163,9 +194,10 @@ the untitled poem </a> <br><br>
 <a href="https://ebonytomatoescollective.com/to-mama-2/"> to mama </a> <br><br>
 </small>
 </p>
+</div>
 
 
-
+<div class="multimedia samples header">
 
 <p>
 <p style="text-align:center;color:#6D5B69;">
@@ -173,6 +205,9 @@ the untitled poem </a> <br><br>
 
 </p>
 
+</div>
+
+<div class="multimedia samples">
 
 <p> 
 <small>
@@ -197,12 +232,13 @@ the untitled poem </a> <br><br>
 
 
 </small>
-
+</div>
 
 <hr>
 
 
 
+<div class="footer">
 
 <p>
 <p style="text-align:right;color:#9A9C5C;">
@@ -223,6 +259,7 @@ the untitled poem </a> <br><br>
 <a href="https://atarahisrael.substack.com"> substack </a> <br>
 </small>
 </p>
+</div>
 
 
 </body>
